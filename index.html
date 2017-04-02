@@ -20,25 +20,7 @@
 			}
 		}
 	</script>
-	 <script>
-        function googleApiClientReady(){
-                gapi.client.setApiKey('AIzaSyARvwirFktEIi_BTaKcCi9Ja-m3IEJYIRk');
-                gapi.client.load('youtube', 'v3', function() {
-                        searchA();
-                });
-        }
-        function searchA() {
-                var q = 'pink floyd';
-                var request = gapi.client.youtube.channels.list({
-                        part: 'statistics',
-                        forUsername : 'GameSprout'
-                });
-                request.execute(function(response) {
-                        var str = JSON.stringify(response.result);
-                        alert(str);
-                });
-        }
- </script>
+	 
 	 
   
 </head>	
